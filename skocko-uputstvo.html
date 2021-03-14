@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type='text/css' href="stil.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="skripta-upustvo.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="alert alert-primary">
+      <h4 class="alert-heading">Uputstvo</h4>
+      <p>
+        Igru igraju dva igrača. Svaki igrač treba da pogodi kombinaciju od četiri znaka zadatu od strane
+        drugog igrača. Igrači jedan za drugim unose kombinacije pritiskanjem na određene simbole.
+        Takođe je moguće u slučaju da se predomisle, da obrišu uneseni simbol pritiskom na isti. Nakon faze zadavanja kombinacija igrači prelaze na stranicu za pogađanje.
+        Pritiskom na dugme start igra počinje. Igrači za vreme od po 60 sekundi imaju sedam
+        pokušaja da pogode zadatu kombinaciju drugog igrača. Pogađaju jedan za drugim unošenjem ispravne kombinacije (od 4 simbola) i pritiskom na dugme pored unete kombinacije. 
+        Za svaki pokušaj igrač dobija informaciju o tome koliko simbola je tačno pogođeno  i na odgovarajućoj poziciji (crveni kružići), a
+        koliko znakova je tačno pogođeno, ali nije na odgovarajućoj poziciji (žuti kružići). Igrači na raspolaganju imaju po
+        60 sekundi za pogađanje kombinacije. Igrač koji prvi pogodi zadatu kombinaciju je pobednik. U slučaju da bilo kojem igraču istekne vreme drugi
+        igrač automatski pobeđuje, a u slučaju da niko ne pogodi nakon 7. koraka rezultat je nerešen. Igračima se na kraju igre prikazuje kombinacija koju su trebali da pogode.
+        Pritiskom na dugme (Nova igra) igrači mogu da započnu novu igru iz faze zadavanja kombinacija.
+
+        Ako su igrači pročitali uputstvo potrebno je zasebno potvrde (pritiskom na dugme potvrdi) da su pročitali
+        uputstvo.
+      </p>
+      <p class="mb-0"></p>
+    </div>
+    <div class="row">
+      <div class="col-2">
+        <button type="button" name="potvrdi1" onclick="potvrdili(this)" class="btn btn-primary btn-lg">Potvrdi
+          1</button>
+      </div>
+      <div class="col-8">
+        &nbsp;
+      </div>
+      <div class="col-2">
+        <button type="button" name="potvrdi2" onclick="potvrdili(this)" class="btn btn-primary btn-lg">Potvrdi
+          2</button>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
