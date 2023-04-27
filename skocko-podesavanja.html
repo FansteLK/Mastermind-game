@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type='text/css' href="stil.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="skripta-podesavanje.js"></script>
+    <title>Document</title>
+</head>
+
+<body onload="inicijalizuj()">
+    <div class="container-fluid">
+      <div class="alert alert-podesavanja alert-warning alert-dismissible fade show" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4>
+            Postavi kombinaciju
+        </h4>
+      </div>
+      
+      <script>
+        $(".alert").alert();
+      </script>
+    </div>
+    
+        <div class="row">
+            <div class="col-6 offset-3">
+                <table >
+                    <tr>
+                        <td id="td1">&nbsp;</td>
+                        <td id="td2">&nbsp;</td>
+                        <td id="td3">&nbsp;</td>
+                        <td id="td4">&nbsp;</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-3">
+                <button type="button" onclick="sacuvaj()" class="btn btn-success btn-lg">
+                    Sacuvaj Kombinaciju
+                </button>
+            </div>
+        </div>
+       
+        <br>
+        <br>
+ <div class="row ">
+    <div class="col-1 offset-3">
+        <img src="skocko-dodatno/skocko.png"  name="skocko" class="dodaj" onclick="dodajUKomb(this)">
+    </div>
+    <div class="col-1 ">
+        <img src="skocko-dodatno/tref.png"  name="tref" class="dodaj" onclick="dodajUKomb(this)">
+    </div>
+    <div class="col-1 ">
+        <img src="skocko-dodatno/pik.png" name="pik" class="dodaj" onclick="dodajUKomb(this)">
+    </div>
+    <div class="col-1 ">
+        <img src="skocko-dodatno/srce.png" name="srce"class="dodaj" onclick="dodajUKomb(this)">
+    </div>
+    <div class="col-1 ">
+        <img src="skocko-dodatno/karo.png" name="karo" class="dodaj" onclick="dodajUKomb(this)">
+    </div>
+  
+    <div class="col-1 ">
+        <img src="skocko-dodatno/zvezda.png"  name="zvezda" class="dodaj"onclick="dodajUKomb(this)">
+    </div>
+  
+  
+    
+ </div>
+    
+  
+</body>
+</html>

@@ -1,0 +1,52 @@
+.alert
+{
+font-size: 30px;
+}
+.alert h4
+{
+    text-align: center;
+    font-size:50px;
+}
+.btn-lg
+{
+
+height: 100px;
+}
+.col-2
+{
+    text-align: center;
+}
+strong
+{
+    text-align: center;
+    font-size:50px;
+}
+td
+{
+ 
+    border-style: solid;
+    border-width: 1px; 
+    border-radius: 20px;
+    width: 25%;
+    height: 280px;
+}
+table
+{
+
+    
+  width: 100%;
+}
+img
+{
+   
+    width:100%;
+  
+}
+.btn-success
+{
+    margin-top: 20%;
+}
+
+.dodaj:hover{ background-color: greenyellow;  border-style: solid;
+    border-width: 1px;
+border-radius: 25px; }
