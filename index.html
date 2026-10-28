@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mastermind – Rules</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main>
+    <h1>Mastermind for two</h1>
+    <section class="rules">
+      <p>
+        Two players play against each other. Each player secretly chooses a code of
+        <strong>four symbols</strong> for the opponent to crack. Click a symbol to add it to the code
+        and click a placed symbol to remove it.
+      </p>
+      <p>
+        After both codes are set, press <strong>Start</strong>. Players take turns guessing, with
+        <strong>seven attempts</strong> each and a chess-style clock of <strong>60 seconds</strong> per player.
+        After each guess you get feedback:
+      </p>
+      <ul>
+        <li><img src="assets/pegs/red.png" alt="red peg" width="20"> right symbol in the right position</li>
+        <li><img src="assets/pegs/yellow.png" alt="yellow peg" width="20"> right symbol in the wrong position</li>
+      </ul>
+      <p>
+        The first player to crack the code wins. If a player's clock runs out, the opponent wins. If nobody
+        cracks the code within seven attempts, the game is a draw. Both codes are revealed at the end.
+      </p>
+      <p>Each player confirms they have read the rules to continue.</p>
+    </section>
+    <div class="confirm-row">
+      <button type="button" data-player="1">Player 1: got it</button>
+      <button type="button" data-player="2">Player 2: got it</button>
+    </div>
+  </main>
+  <script src="js/rules.js"></script>
+</body>
+</html>
