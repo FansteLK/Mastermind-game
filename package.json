@@ -1,0 +1,11 @@
+{
+  "name": "mastermind-game",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Two-player Mastermind in the browser with a chess-style clock",
+  "scripts": {
+    "test": "node --test tests/",
+    "start": "npx --yes serve ."
+  },
+  "license": "UNLICENSED"
+}
